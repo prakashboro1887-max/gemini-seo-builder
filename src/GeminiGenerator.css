@@ -1,0 +1,173 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+
+.page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f8fafc;
+  min-height: 100vh;
+  transition: background 0.3s;
+}
+
+.dark {
+  background: #0f172a;
+  color: #f8fafc;
+}
+
+.app-container {
+  background: white;
+  width: 90%;
+  max-width: 700px;
+  padding: 2.5rem;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s, color 0.3s;
+}
+
+.dark .app-container {
+  background: #1e293b;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.8rem;
+}
+
+h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #1e293b;
+}
+
+.dark h1 {
+  color: #e2e8f0;
+}
+
+.toggle {
+  background: transparent;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  padding: 0.4rem 0.8rem;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.toggle:hover {
+  background: #f1f5f9;
+}
+
+.dark .toggle {
+  border: 1px solid #475569;
+  color: #e2e8f0;
+}
+
+.input-area {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+textarea {
+  flex: 1;
+  padding: 1rem;
+  border-radius: 12px;
+  border: 1px solid #d1d5db;
+  resize: none;
+  font-size: 1rem;
+  transition: 0.3s;
+  min-height: 100px;
+}
+
+textarea:focus {
+  border-color: #2563eb;
+  outline: none;
+}
+
+.dark textarea {
+  background: #334155;
+  border: 1px solid #475569;
+  color: #f1f5f9;
+}
+
+.generate-btn {
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 0.8rem 1.4rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: background 0.3s;
+}
+
+.generate-btn:hover {
+  background: #1d4ed8;
+}
+
+.results {
+  margin-top: 2rem;
+}
+
+.results h3 {
+  margin-bottom: 0.8rem;
+  color: #1e293b;
+}
+
+.dark .results h3 {
+  color: #f1f5f9;
+}
+
+ul {
+  padding-left: 1.2rem;
+  line-height: 1.7;
+}
+
+.keywords {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.keywords span {
+  background: #e2e8f0;
+  color: #1e293b;
+  padding: 5px 10px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+
+.dark .keywords span {
+  background: #334155;
+  color: #e2e8f0;
+}
+
+@media (max-width: 600px) {
+  .app-container {
+    padding: 1.5rem;
+  }
+
+  textarea {
+    min-height: 120px;
+  }
+
+  .generate-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  header {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}

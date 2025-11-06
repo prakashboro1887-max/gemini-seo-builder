@@ -14,9 +14,11 @@
     "cors": "^2.8.5",
     "dotenv": "^17.2.3",
     "express": "^5.1.0",
+    "lucide-react": "^0.552.0",
     "marked": "^16.4.1",
     "node-fetch": "^3.3.2",
     "openai": "^6.7.0",
+    "pdfjs-dist": "^3.11.174",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "vite-plugin-node": "^7.0.0"
